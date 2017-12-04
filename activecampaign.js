@@ -20,14 +20,14 @@ if(~li_GerirScoring.text().indexOf('Manage Scoring')) {
 }
 
 let btn_NovoContato = jQuery('#ac_subheader-wrap > div.fright.contacts_index_subheader__buttonsright.campaign_buttonsright > a.ac_button.button_medium.alt1.contacts_index_subheader_add-contact > span');
-if(~btn_NovoContato.html()indexOf('New Contact')) {
+if(~btn_NovoContato.html().indexOf('New Contact')) {
 	btn_NovoContato.html(btn_NovoContato.html().replace('New Contact', 'Novo Contacto'));
 }
 
 jQuery('button.popover-trigger.action-popover-trigger.ac_button.noicon').click(function(event) {
 	setTimeout(function() {
 		let menu_ContatosGerir = jQuery('.ac_popover-menu');
-		
+
 		if(~menu_ContatosGerir.html().indexOf('Manage Tags')) {
 			menu_ContatosGerir.html(menu_ContatosGerir.replace('Manage Tags', 'Gerir Tags'));
 		}
