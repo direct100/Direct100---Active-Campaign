@@ -1,0 +1,371 @@
+body.login, body.logout {
+    background: white;
+}
+
+#login_container > div > div > a > img {
+    width: 100%;
+}
+
+#log_user > table > tbody > tr:nth-child(3) > td > input.ac_button_submit.ac_button.large.alt1 {
+    color: white !important;
+}
+
+#login_container > div > div > div {
+    color: rebeccapurple !important;
+}
+
+#log_user > div.ac_login-lower.cf > div > label {
+    color: rgba(102,51,153, 0.7);
+}
+
+.ac_login_box .ac_input {
+    border: rebeccapurple 1px solid !important;
+}
+
+.ac_login_box .ac_input:focus {
+    border: #BA007C 1px solid !important;
+}
+
+#ac_loader-bar {
+    background: rebeccapurple;
+}
+
+.ac_login_box .ac_button, .ac_login_box .ac_button:active {
+    color: white !important;
+    background: rebeccapurple !important;
+    border: rebeccapurple 1px solid !important;
+}
+
+.ac_login_box .ac_button:hover {
+    color: white !important;
+    background: #BA007C !important;
+    border: white 1px solid !important;
+}
+
+#page_header {
+    background: white;
+}
+
+#page_header > div.cf.hdrwrap > a > img {
+    margin-left: 20%;
+}
+
+#page_header > div.hdrwrap > a > img {
+    margin-left: 20%;
+}
+
+#page_header > div.cf.hdrwrap > div.mainmenu.fleft > div {
+    margin-left: 2%;
+    width: 100%;
+}
+
+#page_header .mainmenu {
+        margin: 0 0 0 76px;
+}
+
+#page_header .mainmenu li a:link, #page_header .mainmenu li a:visited {
+    color: rebeccapurple;
+}
+
+#page_header .mainmenu li a:hover {
+    color: #BA007C;
+    background: white;
+}
+
+#page_header div.comp_options div.search_nav .searchicon {
+    color: rebeccapurple;
+}
+
+#page_header div.comp_options div.search_nav .searchicon:hover {
+    color: #BA007C;
+}
+
+#page_header div.comp_options a.avatar {
+    color: rebeccapurple;
+}
+
+#page_header div.comp_options a.avatar:hover {
+    color: #BA007C;
+}
+
+#page_header div.comp_options a.avatar span.image {
+    border-color: rebeccapurple;
+}
+
+#page_header div.comp_options a.avatar span.image:hover {
+    border-color: #BA007C;
+}
+
+#page_header div.comp_options div.actmenu_nav:hover {
+    background: white;
+}
+
+.icon.white svg {
+    fill: rebeccapurple;
+}
+
+.icon.white svg:hover {
+    fill: #BA007C;
+}
+
+.ac_progress > .bar {
+    background-color: #e0e0e0;
+}
+
+.ac_button.blue, .ac_button.bluebtn {
+    background-color: rebeccapurple;
+    border: 1px solid rebeccapurple;
+}
+
+.ac_button.blue:hover, .ac_button.bluebtn:hover {
+    background-color: #BA007C;
+    border: 1px solid #BA007C;
+}
+
+.ac_button.green, .ac_button.greenbtn {
+    background: white;
+    color: rebeccapurple;
+    border-color: rebeccapurple;
+}
+
+.ac_button.green:hover, .ac_button.greenbtn:hover {
+    color: #BA007C;
+    background: white;
+    border-color: rebeccapurple;
+}
+
+#page_header div.comp_options a.avatar span.name {
+    color: rebeccapurple;
+}
+
+#page_header div.comp_options a.avatar.active, #page_header div.comp_options a.avatar:hover {
+    background-color: white;
+}
+
+#page_header div.comp_options a.avatar span.name:hover {
+    color: #BA007C;
+}
+
+.ac_multibutton > .icon {
+    background: rebeccapurple;
+    border-left: white 1px solid;
+}
+
+.ac_multibutton > .icon:hover {
+    background: #BA007C;    
+}
+
+.ac_multibutton > ul {
+    background: white;
+}
+
+.ac_multibutton > ul > li a:link {
+    color: rebeccapurple;
+}
+
+.ac_multibutton > ul > li a:hover {
+    color: #BA007C;
+    background: white;
+}
+
+.ac_multibutton.active > .icon {
+    background: rebeccapurple;
+    border-bottom: rebeccapurple 1px solid;
+    border-right: white 1px solid;
+    border-radius: 0 0 0 6px;
+}
+
+#overview-create-contact > a {
+    color: rebeccapurple;
+    border-left: rebeccapurple 1px solid;
+    border-top: rebeccapurple 1px solid;
+    border-right: rebeccapurple 1px solid;
+}
+
+#overview-create-contact > a:hover {
+    color: #BA007C;
+}
+
+#overview-create-list > a {
+    color: rebeccapurple;
+    border-left: rebeccapurple 1px solid;
+    border-bottom: rebeccapurple 1px solid;
+    border-right: rebeccapurple 1px solid;
+}
+
+#overview-create-list > a:hover {
+    color: #BA007C;
+}
+
+#page_header .mainmenu li a.active {
+    background:  rebeccapurple;
+    color: white;
+}
+
+.ac_subheader {
+     background-color: rebeccapurple;
+}
+
+#ac_subheader {
+    background-color: rebeccapurple;
+}
+
+.ac_button.alt1, a.ac_button.alt1 {
+    background-color: white;
+    border-color: rebeccapurple;
+    color: rebeccapurple !important;
+}
+
+.ac_button.alt1:hover, a.ac_button.alt1:hover {
+    color: #BA007C !important;
+    background-color: white;
+    border-color: rebeccapurple;
+}
+
+.ac_button.alt1:hover {
+    border-color: rebeccapurple;
+}
+
+.ac_button.alt2, a.ac_button.alt2, .ac_button.alt2:focus, a.ac_button.alt2:focus {
+    background-color: white;
+    border-color: white;
+    color: rebeccapurple !important;
+}
+
+.ac_button.alt2:hover, a.ac_button.alt2:hover {
+    color: #BA007C !important;
+    background-color: white;
+    border-color: rebeccapurple;
+}
+
+.ac_button.alt2.alt2:hover {
+    background-color: white;
+    border-color: rebeccapurple;
+}
+
+.ac_multiaction.subheader .popover-trigger,  .ac_multiaction.subheader .popover-trigger:focus {
+    background: white;
+    border-top: white 1px solid;
+    border-right: white 1px solid;
+    border-bottom: white 1px solid;
+}
+
+.ac_multiaction.subheader .popover-trigger:hover {
+    background: white;
+    border-top: rebeccapurple 1px solid;
+    border-right: rebeccapurple 1px solid;
+    border-bottom: rebeccapurple 1px solid;
+}
+
+.ac_multiaction.subheader.open .popover-trigger {
+    background: white;
+}
+
+.ac_multiaction.subheader .popover-trigger svg {
+    fill: rebeccapurple;
+}
+
+.ac_multiaction.subheader .popover-trigger svg:hover {
+    fill: #BA007C;
+}
+
+.ac_multiaction.subheader .main svg {
+    fill: rebeccapurple;
+}
+
+.ac_multiaction.subheader .main svg:hover {
+    fill: #BA007C;
+}
+
+.mini-button-top > .popover-trigger:hover, .mini-button-top.active > .popover-trigger {
+    background-color: white;
+    border-color: rebeccapurple;
+}
+
+.mini-button-top > .popover-trigger {
+    background-color: white;
+    border-left: rebeccapurple 1px solid;
+    padding: 11px 15px 9px 15px;
+    border-top: white 1px solid;
+    border-right: white 1px solid;
+    border-bottom: white 1px solid;
+}
+
+body.template_view #page_header, body.designer2 #page_header, body.campaign_new #page_header, body.campaign_designer #page_header, body.old.template #page_header {
+    background-color: rebeccapurple !important;
+}
+
+#page_header.cre-prgs div.progress_group ul > li span {
+    background-color: white;
+    color: rebeccapurple;
+}
+
+#page_header.cre-prgs div.progress_group ul > li span:hover {
+    color: rebeccapurple !important;
+}
+
+#page_header.cre-prgs div.progress_group ul > li span:before {
+    border-left: 7px solid rebeccapurple;
+}
+
+#page_header.cre-prgs div.progress_group ul > li span:after {
+    border-left: 6px solid white;
+}
+
+.ac_sidenav ul li a.active, .ac_sidenav ul li.active a {
+    border-left: rebeccapurple 4px solid;
+}
+
+#import .import_wrap a.import_file_link {
+    background: rebeccapurple;
+    border-bottom: 3px solid #BA007C;
+}
+
+#import .import_wrap a.import_file_link:hover {
+    background: #BA007C;
+    border-bottom: 3px solid rebeccapurple;
+}
+
+#import .import_wrap > div > a {
+    color: #999;
+}
+
+input.ac_input:focus, input.ui-autocomplete-input:focus {
+    border: 1px solid rebeccapurple;
+}
+
+#ember852 > div {
+    border-color: rebeccapurple !important;
+}
+
+#ember1166 {
+    display: none;
+}
+
+#page_header div.comp_options .ac_account-dropdown ul li a {
+     color: rebeccapurple;
+}
+
+#page_header div.comp_options .ac_account-dropdown ul li a:hover {
+     color: #BA007C;
+}
+
+#page_header div.comp_options .ac_account-dropdown {
+    border: rebeccapurple 1px solid;
+}
+
+#page_header div.comp_options .ac_account-dropdown > ul > li > a {
+    color: rebeccapurple !important;
+}
+
+#page_header div.comp_options .ac_account-dropdown > ul > li > a:hover {
+    color: #BA007C !important;
+}
+
+#ember882 > svg > use {
+    fill: rebeccapurple;
+}
+
+#login_container > div > div.slides {
+    display: none;
+}
