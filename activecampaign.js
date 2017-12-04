@@ -15,7 +15,7 @@ if(~jQuery('#ember894 > div > button.ac_button.main.button_medium.alt2 > span.ac
 	jQuery('#ember894 > div > button.ac_button.main.button_medium.alt2 > span.action-text').text('Gerir Scoring');
 }
 
-jQuery('button .popover-trigger .action-popover-trigger .ac_button.noicon').click(function(event) {
+jQuery('button.popover-trigger.action-popover-trigger.ac_button.noicon').click(function(event) {
 	setTimeout(function() {
 		console.log('timer');
 		if(~jQuery('.ac_popover-menu').html().indexOf('Manage Tags')) {
