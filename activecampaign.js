@@ -29,7 +29,7 @@ jQuery('button.popover-trigger.action-popover-trigger.ac_button.noicon').click(f
 		let menu_ContatosGerir = jQuery('.ac_popover-menu');
 
 		if(~menu_ContatosGerir.html().indexOf('Manage Tags')) {
-			menu_ContatosGerir.html(menu_ContatosGerir.replace('Manage Tags', 'Gerir Tags'));
+			menu_ContatosGerir.html(menu_ContatosGerir.html().replace('Manage Tags', 'Gerir Tags'));
 		}
 
 		if(~menu_ContatosGerir.html().indexOf('Manage Exclusions')) {
