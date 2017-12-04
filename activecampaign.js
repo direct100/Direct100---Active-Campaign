@@ -1,33 +1,44 @@
 //Contatos
-if(~jQuery('#contactLists > div.ac_page-title > h3').text().indexOf('All Contacts')) {
-	jQuery('#contactLists > div.ac_page-title > h3').text('Todos os Contatos');
+let h3_TodosContatos = jQuery('#contactLists > div.ac_page-title > h3');
+if(~h3_TodosContatos.text().indexOf('All Contacts')) {
+	h3_TodosContatos.text('Todos os Contatos');
 }
 
-if(~jQuery('#contactLists > div.empty > div.title').text().indexOf("You don't have any contacts")) {
-	jQuery('#contactLists > div.empty > div.title').text('Não tem nenhum contato');
+let div_ContatoTitle = jQuery('#contactLists > div.empty > div.title');
+if(~div_ContatoTitle.text().indexOf("You don't have any contacts")) {
+	div_ContatoTitle.text('Não tem nenhum contato');
 }
 
-if(~jQuery('#contactLists > div.empty > div.body').text().indexOf('Add or Import new contacts by clicking the "New Contact" button on the top right of the screen')) {
-	jQuery('#contactLists > div.empty > div.body').text('Adicione ou Importe novos contatos ao clicar no botão "Novo Contato" na parte superior direita do seu ecrã');
+let div_ContatoBody = jQuery('#contactLists > div.empty > div.body');
+if(~div_ContatoBody.text().indexOf('Add or Import new contacts by clicking the "New Contact" button on the top right of the screen')) {
+	div_ContatoBody.text('Adicione ou Importe novos contatos ao clicar no botão "Novo Contato" na parte superior direita do seu ecrã');
 }
 
-if(~jQuery('#ember894 > div > button.ac_button.main.button_medium.alt2 > span.action-text').text().indexOf('Manage Scoring')) {
-	jQuery('#ember894 > div > button.ac_button.main.button_medium.alt2 > span.action-text').text('Gerir Scoring');
+let li_GerirScoring = jQuery('#ember894 > div > button.ac_button.main.button_medium.alt2 > span.action-text');
+if(~li_GerirScoring.text().indexOf('Manage Scoring')) {
+	li_GerirScoring.text('Gerir Scoring');
+}
+
+let btn_NovoContato = jQuery('#ac_subheader-wrap > div.fright.contacts_index_subheader__buttonsright.campaign_buttonsright > a.ac_button.button_medium.alt1.contacts_index_subheader_add-contact > span');
+if(~btn_NovoContato.html()indexOf('New Contact')) {
+	btn_NovoContato.html(btn_NovoContato.html().replace('New Contact', 'Novo Contacto'));
 }
 
 jQuery('button.popover-trigger.action-popover-trigger.ac_button.noicon').click(function(event) {
 	setTimeout(function() {
-		if(~jQuery('.ac_popover-menu').html().indexOf('Manage Tags')) {
-			jQuery('.ac_popover-menu').html(jQuery('.ac_popover-menu').html().replace('Manage Tags', 'Gerir Tags'));
+		let menu_ContatosGerir = jQuery('.ac_popover-menu');
+		
+		if(~menu_ContatosGerir.html().indexOf('Manage Tags')) {
+			menu_ContatosGerir.html(menu_ContatosGerir.replace('Manage Tags', 'Gerir Tags'));
 		}
 
-		if(~jQuery('.ac_popover-menu').html().indexOf('Manage Exclusions')) {
-			jQuery('.ac_popover-menu').html(jQuery('.ac_popover-menu').html().replace('Manage Exclusions', 'Gerir Exclusões'));
+		if(~menu_ContatosGerir.html().indexOf('Manage Exclusions')) {
+			menu_ContatosGerir.html(menu_ContatosGerir.html().replace('Manage Exclusions', 'Gerir Exclusões'));
 		}
 
-		if(~jQuery('.ac_popover-menu').html().indexOf('Personal Batch Actions')) {
-			jQuery('.ac_popover-menu').html(jQuery('.ac_popover-menu').html().replace('Personal Batch Actions', 'Ações em lote'));
+		if(~menu_ContatosGerir.html().indexOf('Personal Batch Actions')) {
+			menu_ContatosGerir.html(menu_ContatosGerir.html().replace('Personal Batch Actions', 'Ações em lote'));
 		}
-	}, 100);
+	}, 50);
 });
 
