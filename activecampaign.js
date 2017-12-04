@@ -17,6 +17,7 @@ if(~jQuery('#ember894 > div > button.ac_button.main.button_medium.alt2 > span.ac
 
 jQuery('button .popover-trigger .action-popover-trigger .ac_button.noicon').click(function(event) {
 	setTimeout(function() {
+		console.log('timer');
 		if(~jQuery('.ac_popover-menu').html().indexOf('Manage Tags')) {
 			jQuery('.ac_popover-menu').html(jQuery('.ac_popover-menu').html().replace('Manage Tags', 'Gerir Tags'));
 		}
@@ -28,6 +29,6 @@ jQuery('button .popover-trigger .action-popover-trigger .ac_button.noicon').clic
 		if(~jQuery('.ac_popover-menu').html().indexOf('Personal Batch Actions')) {
 			jQuery('.ac_popover-menu').html(jQuery('.ac_popover-menu').html().replace('Personal Batch Actions', 'Ações em lote'));
 		}
-	}, 300);
+	}, 500);
 });
 
