@@ -39,6 +39,16 @@ jQuery('button.popover-trigger.action-popover-trigger.ac_button.noicon').click(f
 		if(~menu_ContatosGerir.html().indexOf('Personal Batch Actions')) {
 			menu_ContatosGerir.html(menu_ContatosGerir.html().replace('Personal Batch Actions', 'Ações em lote'));
 		}
-	}, 50);
+	}, 20);
 });
 
+//Formulários
+let h4Modal_FormularioTitle = jQuery('#ember1114 > div > h4');
+if(~h4Modal_FormularioTitle.text().indexOf('Building forms just got easier')) {
+	h4Modal_FormularioTitle.text('Contruir Formulários tornou-se mais fácil');
+}
+
+let h4Modal_FormularioBody = jQuery('#modal-destination > div > div.modal-wrap.ember1112 > div > div > div.modal-body.text_center > p');
+if(~h4Modal_FormularioBody.text().indexOf('Our new form builder makes it easy to create and customize all of your forms in one simple to use interface. Add forms to your page in a floating bar, floating box or even in a popup.')) {
+	h4Modal_FormularioBody.text('O nosso novo criador de Formulários torna a criação e customização dos Formulários mais fácil com a sua interface simples. Adicione Formulários à sua página numa barra ou caixa flutuante ou até mesmo num popup');
+}
