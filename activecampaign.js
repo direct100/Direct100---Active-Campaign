@@ -17,16 +17,16 @@ if(~jQuery('#ember894 > div > button.ac_button.main.button_medium.alt2 > span.ac
 
 jQuery('button .popover-trigger .action-popover-trigger .ac_button.noicon').click(function(event) {
 	if(~jQuery('.ac_popover-menu').html().indexOf('Manage Tags')) {
-		jQuery('.ac_popover-menu').html().replace('Manage Tags', 'Gerir Tags');
+		jQuery('.ac_popover-menu').html(jQuery('.ac_popover-menu').html().replace('Manage Tags', 'Gerir Tags'));
 	}
 
 
 	if(~jQuery('.ac_popover-menu').html().indexOf('Manage Exclusions')) {
-		jQuery('.ac_popover-menu').html().replace('Manage Exclusions', 'Gerir Exclusões');
+		jQuery('.ac_popover-menu').html(jQuery('.ac_popover-menu').html().replace('Manage Exclusions', 'Gerir Exclusões'));
 	}
 
 	if(~jQuery('.ac_popover-menu').html().indexOf('Personal Batch Actions')) {
-		jQuery('.ac_popover-menu').html().replace('Personal Batch Actions', 'Ações em lote');
+		jQuery('.ac_popover-menu').html(jQuery('.ac_popover-menu').html().replace('Personal Batch Actions', 'Ações em lote'));
 	}
 });
 
