@@ -62,6 +62,32 @@ function contactos() {
 		}
 	}
 
+	let btn_ContatoEditAll = jQuery('.ac_button.nomargin.small.grey-border.edit-all');
+	if(btn_ContatoEditAll.length) {
+		if(~btn_ContatoEditAll.text().indexOf('Edit All')) {
+			btn_ContatoEditAll.text('Editar Todos');
+		}
+	}
+
+	jQuery('.popover-trigger.action-popover-trigger.ac_button.noicon').click(function(event) {
+		setTimeout(function() {
+
+			let btn_ContatoOptions = jQuery('.ac_popover-menu.action-popover-menu.ac_block');
+			if(btn_ContatoOptions.length) {
+
+				if(~btn_ContatoOptions.html().indexOf('Add Note')) {
+					btn_ContatoOptions.html(btn_ContatoOptions.html().replace('Add Note', 'Adicionar Nota'));
+				}
+
+				if(~btn_ContatoOptions.html().indexOf('Delete Contact')) {
+					btn_ContatoOptions.html(btn_ContatoOptions.html().replace('Delete Contact', 'Apagar Contato'));
+				}
+
+			}
+
+		}, 20);
+	});
+
 	jQuery('button.popover-trigger.action-popover-trigger.ac_button.noicon').click(function(event) {
 		setTimeout(function() {
 
