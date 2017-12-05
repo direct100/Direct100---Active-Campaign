@@ -4,30 +4,24 @@ jQuery(window).load(function() {
 
 	//Contatos
 	jQuery('#page_header > div.cf.hdrwrap > div.mainmenu.fleft > div > ul > li.mainmenu_ct').click(function(event) {
-		console.log('click ct');
 		setTimeout(function() {
 			contactos();
-		}, 20);
+		}, 100);
 	});
 
 	if(~path.indexOf('contacts')) {
-		console.log('path ct');
 		contactos();
 	}
 
 	//Formulários
 	jQuery('#page_header > div.cf.hdrwrap > div.mainmenu.fleft > div > ul > li.mainmenu_fr').click(function(event) {
-		console.log('click fr');
 		setTimeout(function() {
 			formularios();
 		}, 100);
 	});
 
 	if(~path.indexOf('forms')) {
-		console.log('path fr');
-		setTimeout(function() {
-			formularios();
-		}, 100);
+		formularios();
 	}
 
 });
@@ -54,10 +48,10 @@ function contactos() {
 		}
 	}
 
-	let li_GerirScoring = jQuery('#ember894 > div > button.ac_button.main.button_medium.alt2 > span.action-text');
-	if(li_GerirScoring.length) {
-		if(~li_GerirScoring.text().indexOf('Manage Scoring')) {
-			li_GerirScoring.text('Gerir Scoring');
+	let span_GerirScoring = jQuery('#ember894 > div > button.ac_button.main.button_medium.alt2 > span.action-text');
+	if(span_GerirScoring.length) {
+		if(~span_GerirScoring.text().indexOf('Manage Scoring')) {
+			span_GerirScoring.text('Gerir Scoring');
 		}
 	}
 
@@ -104,4 +98,60 @@ function formularios() {
 			h4Modal_FormularioBody.text('O nosso novo criador de Formulários torna a criação e customização dos Formulários mais fácil com a sua interface simples. Adicione Formulários à sua página numa barra ou caixa flutuante ou até mesmo num popup');
 		}
 	}
+
+	let div_FormTitle = jQuery('#formLists > div.empty > div.title');
+	if(div_FormTitle.length) {
+		if(~div_FormTitle.text().indexOf("Doesn't look like you have any forms")) {
+			div_FormTitle.text('Não tem nenhum Formulário');
+		}
+	}
+
+	let div_FormBody = jQuery('#formLists > div.empty > div.body');
+	if(div_FormBody.length) {
+		if(~div_FormBody.text().indexOf('Create a new form by clicking the "New Form" button at the top right of the screen.')) {
+			div_FormBody.text('Crie um novo Formulário ao clicar no butão "Novo Formulário" na parte superior direita do seu ecrã');
+		}
+	}
+
+	let a_FormSidebarAll = jQuery('#uxleft_content > div > ul > li:nth-child(1) > a');
+	if(a_FormSidebarAll.length) {
+		if(~a_FormSidebarAll.text().indexOf('All Forms')) {
+			a_FormSidebarAll.text('Todos os Formulários');
+		}
+	}
+
+	let li_FormSidebarLabels = jQuery('#uxleft_content > div > ul > li.heading.mt10');
+	if(li_FormSidebarLabels.length) {
+		if(~li_FormSidebarLabels.html().indexOf('Labels')) {
+			li_FormSidebarLabels.html(li_FormSidebarLabels.html().replace('Labels', 'Etiquetas'));
+		}
+	}
+
+
+	let span_GerirCampos = jQuery('#ember872 > span.action-text');
+	if(span_GerirCampos.length) {
+		if(~span_GerirCampos.text().indexOf('Manage Fields')) {
+			span_GerirCampos.text('Gerir Campos');
+		}
+	}
+
+	let btn_NovoForm = jQuery('#ac_subheader-wrap > div.fright.campaign_buttonsright > a.ac_button.button_medium.alt1');
+	if(btn_NovoForm.length) {
+		if(~btn_NovoForm.html().indexOf('New Form')) {
+			btn_NovoForm.html(btn_NovoForm.html().replace('New Form', 'Novo Formulário'));
+		}
+	}
+
+	jQuery('button.popover-trigger.action-popover-trigger.ac_button.noicon').click(function(event) {
+		setTimeout(function() {
+			let menu_FormGerir = jQuery('.ac_popover-menu');
+			if(menu_FormGerir.length) {
+				if(~menu_FormGerir.html().indexOf('View App Directory')) {
+					menu_FormGerir.html(menu_FormGerir.html().replace('View App Directory', 'Ver Directoria da Aplicação'));
+				}
+			}
+
+		}, 20);
+	});
+
 }
