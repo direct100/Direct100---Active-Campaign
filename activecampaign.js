@@ -51,7 +51,7 @@ function contactos() {
 	let span_GerirScoring = jQuery('#ember894 > div > button.ac_button.main.button_medium.alt2 > span.action-text');
 	if(span_GerirScoring.length) {
 		if(~span_GerirScoring.text().indexOf('Manage Scoring')) {
-			span_GerirScoring.text('Gerir Objetivos');
+			span_GerirScoring.text('Gerir Pontuação');
 		}
 	}
 
