@@ -64,8 +64,8 @@ function contactos() {
 
 	jQuery('button.popover-trigger.action-popover-trigger.ac_button.noicon').click(function(event) {
 		setTimeout(function() {
-			let menu_ContatosGerir = jQuery('.ac_popover-menu');
 
+			let menu_ContatosGerir = jQuery('.ac_popover-menu');
 			if(menu_ContatosGerir.length) {
 				if(~menu_ContatosGerir.html().indexOf('Manage Tags')) {
 					menu_ContatosGerir.html(menu_ContatosGerir.html().replace('Manage Tags', 'Gerir Etiquetas'));
@@ -84,9 +84,8 @@ function contactos() {
 	});
 
 	jQuery('#ac_subheader-wrap > div.fright.contacts_index_subheader__buttonsright.campaign_buttonsright > a.ac_button.button_medium.alt1.contacts_index_subheader_add-contact').click(function(event) {
-		console.log('novo ct');
 		setTimeout(function() {
-			console.log('here');
+
 			let h4Modal_ContatoTitle = jQuery('.modal-title');
 			if(h4Modal_ContatoTitle.length) {
 				if(~h4Modal_ContatoTitle.text().indexOf('Contact Profile')) {
@@ -100,6 +99,49 @@ function contactos() {
 					label_ContatoTel.text('Telemóvel');
 				}
 			}
+
+		}, 500);		
+	});
+
+	jQuery('#add-contact > div.modal-wrap.add-contact > div > div > div.modal-footer > button.ac_button.alt1.next').click(function(event) {
+		setTimeout(function() {
+
+			let btn_ContatoEditAll = jQuery('.ac_button.nomargin.small.grey-border.edit-all');
+			if(btn_ContatoEditAll.length) {
+				if(~btn_ContatoEditAll.text().indexOf('Edit All')) {
+					btn_ContatoEditAll.text('Editar Todos');
+				}
+			}
+
+			let spanModal_ContatoAv = jQuery('.ember-view.header.cf > div > span');
+			if(label_ContatoTel.length) {
+				if(~label_ContatoTel.text().indexOf('Advanced List Options')) {
+					label_ContatoTel.text('Opções de Lista Avançadas');
+				}
+			}
+
+			jQuery('.ember-view.header.cf > .fright').click(function(event) {
+				setTimeout(function() {
+
+					let divModal_ContatoAvOpen = jQuery('.ember-view');
+					if(divModal_ContatoAvOpen.length) {
+
+						if(~divModal_ContatoAvOpen.html().indexOf('Do not send any future Autoresponders')) {
+							divModal_ContatoAvOpen.html(divModal_ContatoAvOpen.html().replace('Do not send any future Autoresponders', 'Não enviar futuras respostas automáticas'));
+						}
+
+						if(~divModal_ContatoAvOpen.html().indexOf('Send instant Autoresponders')) {
+							divModal_ContatoAvOpen.html(divModal_ContatoAvOpen.html().replace('Send instant Autoresponders', 'Enviar respostas automáticas instantaneamente'));
+						}
+
+						if(~divModal_ContatoAvOpen.html().indexOf('Send the last distributed Campaign')) {
+							divModal_ContatoAvOpen.html(divModal_ContatoAvOpen.html().replace('Send the last distributed Campaign', 'Enviar a última campanha distribuída'));
+						}
+					}
+
+				}, 500);	
+			});
+
 		}, 500);		
 	});
 	
@@ -165,6 +207,7 @@ function formularios() {
 
 	jQuery('button.popover-trigger.action-popover-trigger.ac_button.noicon').click(function(event) {
 		setTimeout(function() {
+
 			let menu_FormGerir = jQuery('.ac_popover-menu');
 			if(menu_FormGerir.length) {
 				if(~menu_FormGerir.html().indexOf('View App Directory')) {
