@@ -18,14 +18,16 @@ jQuery(window).load(function() {
 	//Formulários
 	jQuery('#page_header > div.cf.hdrwrap > div.mainmenu.fleft > div > ul > li.mainmenu_fr').click(function(event) {
 		console.log('click fr');
-		formularios();
+		setTimeout(function() {
+			formularios();
+		}, 100);
 	});
 
 	if(~path.indexOf('forms')) {
 		console.log('path fr');
 		setTimeout(function() {
 			formularios();
-		}, 20);
+		}, 100);
 	}
 
 });
