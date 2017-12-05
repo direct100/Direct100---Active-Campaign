@@ -51,7 +51,7 @@ function contactos() {
 	let span_GerirScoring = jQuery('#ember894 > div > button.ac_button.main.button_medium.alt2 > span.action-text');
 	if(span_GerirScoring.length) {
 		if(~span_GerirScoring.text().indexOf('Manage Scoring')) {
-			span_GerirScoring.text('Gerir Scoring');
+			span_GerirScoring.text('Gerir Objetivos');
 		}
 	}
 
@@ -68,7 +68,7 @@ function contactos() {
 
 			if(menu_ContatosGerir.length) {
 				if(~menu_ContatosGerir.html().indexOf('Manage Tags')) {
-					menu_ContatosGerir.html(menu_ContatosGerir.html().replace('Manage Tags', 'Gerir Tags'));
+					menu_ContatosGerir.html(menu_ContatosGerir.html().replace('Manage Tags', 'Gerir Etiquetas'));
 				}
 
 				if(~menu_ContatosGerir.html().indexOf('Manage Exclusions')) {
