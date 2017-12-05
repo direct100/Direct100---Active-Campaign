@@ -83,19 +83,23 @@ function contactos() {
 		}, 20);
 	});
 
-	let h4Modal_ContatoTitle = jQuery('.modal-title');
-	if(h4Modal_ContatoTitle.length) {
-		if(~h4Modal_ContatoTitle.text().indexOf('Contact Profile')) {
-			h4Modal_ContatoTitle.text('Perfil Contato');
+	jQuery('#ac_subheader-wrap > div.fright.contacts_index_subheader__buttonsright.campaign_buttonsright > a.ac_button.button_medium.alt1.contacts_index_subheader_add-contact').click(function(event) {
+		
+		let h4Modal_ContatoTitle = jQuery('.modal-title');
+		if(h4Modal_ContatoTitle.length) {
+			if(~h4Modal_ContatoTitle.text().indexOf('Contact Profile')) {
+				h4Modal_ContatoTitle.text('Perfil Contato');
+			}
 		}
-	}
 
-	let label_ContatoTel = jQuery('#add-contact > div.modal-wrap.add-contact > div > div > div.modal-body > div:nth-child(4) > label');
-	if(label_ContatoTel.length) {
-		if(~label_ContatoTel.text().indexOf('Phone Number')) {
-			label_ContatoTel.text('Telemóvel');
+		let label_ContatoTel = jQuery('#add-contact > div.modal-wrap.add-contact > div > div > div.modal-body > div:nth-child(4) > label');
+		if(label_ContatoTel.length) {
+			if(~label_ContatoTel.text().indexOf('Phone Number')) {
+				label_ContatoTel.text('Telemóvel');
+			}
 		}
-	}
+	});
+	
 }
 
 function formularios() {
