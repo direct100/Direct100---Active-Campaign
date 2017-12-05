@@ -1,5 +1,28 @@
-//Contatos
-jQuery('#page_header > div.cf.hdrwrap > div.mainmenu.fleft > div > ul > li.mainmenu_ct > a').click(function(event) {
+jQuery(window).load(function() {
+
+	let path = window.location.pathname;
+
+	//Contatos
+	jQuery('#page_header > div.cf.hdrwrap > div.mainmenu.fleft > div > ul > li.mainmenu_ct > a').click(function(event) {
+		contactos();
+	});
+
+	if(~path.indexOf('contacts')) {
+		contactos();
+	}
+
+	//Formulários
+	jQuery('#page_header > div.cf.hdrwrap > div.mainmenu.fleft > div > ul > li.mainmenu_fr > a').click(function(event) {
+		formularios();
+	});
+	
+	if(~path.indexOf('forms')) {
+		formularios();
+	}
+
+});
+
+function contactos() {
 	let h3_TodosContatos = jQuery('#contactLists > div.ac_page-title > h3');
 	if(h3_TodosContatos.length) {
 		if(~h3_TodosContatos.text().indexOf('All Contacts')) {
@@ -55,19 +78,20 @@ jQuery('#page_header > div.cf.hdrwrap > div.mainmenu.fleft > div > ul > li.mainm
 
 		}, 20);
 	});
-});
-
-//Formulários
-let h4Modal_FormularioTitle = jQuery('.modal-title');
-if(h4Modal_FormularioTitle.length) {
-	if(~h4Modal_FormularioTitle.text().indexOf('Building forms just got easier')) {
-		h4Modal_FormularioTitle.text('Contruir Formulários tornou-se mais fácil');
-	}
 }
 
-let h4Modal_FormularioBody = jQuery('div.modal-body.text_center > p');
-if(h4Modal_FormularioBody.length) {
-	if(~h4Modal_FormularioBody.text().indexOf('Our new form builder makes it easy to create and customize all of your forms in one simple to use interface. Add forms to your page in a floating bar, floating box or even in a popup.')) {
-		h4Modal_FormularioBody.text('O nosso novo criador de Formulários torna a criação e customização dos Formulários mais fácil com a sua interface simples. Adicione Formulários à sua página numa barra ou caixa flutuante ou até mesmo num popup');
+function formularios() {
+	let h4Modal_FormularioTitle = jQuery('.modal-title');
+	if(h4Modal_FormularioTitle.length) {
+		if(~h4Modal_FormularioTitle.text().indexOf('Building forms just got easier')) {
+			h4Modal_FormularioTitle.text('Contruir Formulários tornou-se mais fácil');
+		}
+	}
+
+	let h4Modal_FormularioBody = jQuery('div.modal-body.text_center > p');
+	if(h4Modal_FormularioBody.length) {
+		if(~h4Modal_FormularioBody.text().indexOf('Our new form builder makes it easy to create and customize all of your forms in one simple to use interface. Add forms to your page in a floating bar, floating box or even in a popup.')) {
+			h4Modal_FormularioBody.text('O nosso novo criador de Formulários torna a criação e customização dos Formulários mais fácil com a sua interface simples. Adicione Formulários à sua página numa barra ou caixa flutuante ou até mesmo num popup');
+		}
 	}
 }
