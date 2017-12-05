@@ -3,21 +3,29 @@ jQuery(window).load(function() {
 	let path = window.location.pathname;
 
 	//Contatos
-	jQuery('#page_header > div.cf.hdrwrap > div.mainmenu.fleft > div > ul > li.mainmenu_ct > a').click(function(event) {
-		contactos();
+	jQuery('#page_header > div.cf.hdrwrap > div.mainmenu.fleft > div > ul > li.mainmenu_ct').click(function(event) {
+		console.log('click ct');
+		setTimeout(function() {
+			contactos();
+		}, 20);
 	});
 
 	if(~path.indexOf('contacts')) {
+		console.log('path ct');
 		contactos();
 	}
 
 	//Formulários
-	jQuery('#page_header > div.cf.hdrwrap > div.mainmenu.fleft > div > ul > li.mainmenu_fr > a').click(function(event) {
+	jQuery('#page_header > div.cf.hdrwrap > div.mainmenu.fleft > div > ul > li.mainmenu_fr').click(function(event) {
+		console.log('click fr');
 		formularios();
 	});
-	
+
 	if(~path.indexOf('forms')) {
-		formularios();
+		console.log('path fr');
+		setTimeout(function() {
+			formularios();
+		}, 20);
 	}
 
 });
