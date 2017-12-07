@@ -14,7 +14,7 @@ jQuery(window).load(function() {
 	}
 
 	//Formulários
-	jQuery('#page_header > div.cf.hdrwrap > div.mainmenu.fleft > div > ul > li.mainmenu_fr').click(function(event) {
+	jQuery('#page_header > div.cf.hdrwrap > div.mainmenu.fleft > direitav > ul > li.mainmenu_fr').click(function(event) {
 		setTimeout(function() {
 			formularios();
 		}, 100);
@@ -103,6 +103,18 @@ function contactos() {
 
 				if(~menu_ContatosGerir.html().indexOf('Personal Batch Actions')) {
 					menu_ContatosGerir.html(menu_ContatosGerir.html().replace('Personal Batch Actions', 'Ações em lote'));
+				}
+
+				if(~menu_ContatosGerir.html().indexOf('Manage Organizations')) {
+					menu_ContatosGerir.html(menu_ContatosGerir.html().replace('Manage Organizations', 'Gerir Organizações'));
+				}
+
+				if(~menu_ContatosGerir.html().indexOf('Manage Tasks')) {
+					menu_ContatosGerir.html(menu_ContatosGerir.html().replace('Manage Tasks', 'Gerir Tarefas'));
+				}
+
+				if(~menu_ContatosGerir.html().indexOf('Database Sync')) {
+					menu_ContatosGerir.html(menu_ContatosGerir.html().replace('Database Sync', 'Sincronização Base de Dados'));
 				}
 			}
 
