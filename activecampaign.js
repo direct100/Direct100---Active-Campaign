@@ -48,12 +48,12 @@ function contactos() {
 		}
 	}
 
-	let span_GerirScoring = jQuery('#ac_subheader-wrap > .contacts_index_subheader__buttonsleft');
-	if(span_GerirScoring.length) {
-		if(~span_GerirScoring.html().indexOf('Manage Scoring')) {
-			span_GerirScoring.html(span_GerirScoring.html().replace('Manage Scoring', 'Gerir Pontuação'));
-		}
-	}
+	// let span_GerirScoring = jQuery('#ac_subheader-wrap > .contacts_index_subheader__buttonsleft');
+	// if(span_GerirScoring.length) {
+	// 	if(~span_GerirScoring.html().indexOf('Manage Scoring')) {
+	// 		span_GerirScoring.html(span_GerirScoring.html().replace('Manage Scoring', 'Gerir Pontuação'));
+	// 	}
+	// }
 
 	let btn_NovoContato = jQuery('#ac_subheader-wrap > div.fright.contacts_index_subheader__buttonsright.campaign_buttonsright > a.ac_button.button_medium.alt1.contacts_index_subheader_add-contact > span');
 	if(btn_NovoContato.length) {
