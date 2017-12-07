@@ -48,7 +48,7 @@ function contactos() {
 		}
 	}
 
-	let span_GerirScoring = jQuery('#ac_subheader-wrap');
+	let span_GerirScoring = jQuery('#ac_subheader-wrap > .contacts_index_subheader__buttonsleft');
 	if(span_GerirScoring.length) {
 		if(~span_GerirScoring.html().indexOf('Manage Scoring')) {
 			span_GerirScoring.html(span_GerirScoring.html().replace('Manage Scoring', 'Gerir Pontuação'));
