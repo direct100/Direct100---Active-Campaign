@@ -48,10 +48,10 @@ function contactos() {
 		}
 	}
 
-	let span_GerirScoring = jQuery('#ember894 > div > button.ac_button.main.button_medium.alt2 > span.action-text');
+	let span_GerirScoring = jQuery('contacts_index_subheader__buttonsleft campaign_buttonsleft');
 	if(span_GerirScoring.length) {
-		if(~span_GerirScoring.text().indexOf('Manage Scoring')) {
-			span_GerirScoring.text('Gerir Pontuação');
+		if(~span_GerirScoring.html().indexOf('Manage Scoring')) {
+			span_GerirScoring.html(span_GerirScoring.html().replace('Manage Scoring', 'Gerir Pontuação'));
 		}
 	}
 
