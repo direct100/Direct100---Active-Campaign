@@ -369,3 +369,8 @@ input.ac_input:focus, input.ui-autocomplete-input:focus {
 #login_container > div > div.slides {
     display: none;
 }
+
+#overview-create-deal > a {
+	border-right: rebeccapurple 1px solid;
+	border-left: rebeccapurple 1px solid;
+}

@@ -24,6 +24,8 @@ jQuery(window).load(function() {
 		formularios();
 	}
 
+	jQuery('._ac_downmsg').html("Esta conta expirou. Ative um plano para usar o Email Marketing.<br><br>Il tuo periodo di prova è scaduto. Attiva un piano per continuare ad usare l'Email Marketing.<br><br>This account has expired. Activate a plan to use Email Marketing.");
+
 });
 
 function contactos() {
